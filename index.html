@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія</title>
+
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -13,8 +14,8 @@
 
     <!-- Шапка -->
     <header class="header">
-        <div class="container main-nav">
-            <nav class="nav">
+         <!-- <div class="container main-nav"> -->
+            <!--<nav class="nav">
                 <a href="./index.html" class="nav__logo logo"><span class="nav__logo--black">Web</span>Studio</a>
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link nav__link--active" href="./index.html">Студія</a></li>
@@ -40,22 +41,73 @@
                         +38 096 111 11 11
                     </a>
                 </li>
-            </ul>
-        </div>
-    </header>
+            </ul>-->
 
-    <main>
+            <div class="container nav">
+                <a href="./index.html" class="nav__logo logo"><span class="nav__logo--black">Web</span>Studio</a>
+                <button type="button" class="nav__btn">
+                    <svg class="nav__icon">
+                        <use href="./images/svg-icon/symbol-defs.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
+                <div class="nav__modal">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#">Студія</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Портфоліо</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Контакти</a>
+                        </li>
+                    </ul>
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <a href="#">+38 096 111 11 11</a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a href="#">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="nav__socials-nav socials-nav">
+                        <li class="socials-nav__item">
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li class="socials-nav__item">
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li class="socials-nav__item">
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li class="socials-nav__item">
+                            <a href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="nav__close-btn">
+                        <svg>
+                            <use href="./images/svg-icon/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div> 
+
+
+    </header>
+ 
+     <!-- <main> -->
 
         <!-- Герой -->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="button primary" data-modal-open>Замовити послугу</button>
             </div>
-        </section>
+        </section> -->
 
         <!-- Наші особливості -->
-        <section class="section features">
+        <!-- <section class="section features">
             <div class="container">
                 <h2 class="title hidden">Особливості</h2>
 
@@ -98,10 +150,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Чим ми займаємось -->
-        <section class="section we-do no-padding">
+        <!-- <section class="section we-do no-padding">
             <div class="container">
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="we-do__list">
@@ -119,10 +171,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Наша команда -->
-        <section class="section team">
+        <!-- <section class="section team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="team__list">
@@ -276,10 +328,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Постійні клієнти -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="title">
                     Постійні клієнти
@@ -329,12 +381,12 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-    </main>
+    <!-- </main> -->
 
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__container">
             <div class="footer__address-container address-container">
                 <a href="./index.html" class="footer__logo logo">Web<span class="footer__logo--white">Studio</span></a>
@@ -483,9 +535,9 @@
                 
             
         </div>
-    </div>
+    </div> 
 
-    <script src="./modal.js"></script>
+    <script src="./modal.js"></script> -->
 </body>
 
 </html>

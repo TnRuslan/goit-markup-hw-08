@@ -7,8 +7,6 @@
 }
 
 .logo {
-    margin-right: 93px;
-
     color: var(--accent-color);
 
     font-family: 'Raleway', sans-serif;
@@ -29,6 +27,9 @@
     }
     &__item:not(:last-child) {
         margin-right: 50px;
+    }
+    &__logo {
+        margin-right: 93px;
     }
 
     &__logo--black {
