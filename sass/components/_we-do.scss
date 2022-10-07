@@ -1,0 +1,27 @@
+.we-do__list {
+    display: flex;
+    gap: 30px;
+}
+
+.we-do__item {
+    position: relative;
+}
+
+.we-do__descr {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
