@@ -45,47 +45,50 @@
 
             <div class="container nav">
                 <a href="./index.html" class="nav__logo logo"><span class="nav__logo--black">Web</span>Studio</a>
-                <button type="button" class="nav__btn">
+                <button type="button" class="nav__btn nav__btn--burger">
                     <svg class="nav__icon">
                         <use href="./images/svg-icon/symbol-defs.svg#icon-burger-menu"></use>
                     </svg>
                 </button>
-                <div class="nav__modal">
+                <div class="nav__modal" data-menu="">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#">Студія</a>
+                            <a class="nav__link" href="#">Студія</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Портфоліо</a>
+                            <a class="nav__link" href="#">Портфоліо</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Контакти</a>
+                            <a class="nav__link" href="#">Контакти</a>
                         </li>
                     </ul>
-                    <ul class="contacts-list">
-                        <li class="contacts-list__item">
-                            <a href="#">+38 096 111 11 11</a>
-                        </li>
-                        <li class="contacts-list__item">
-                            <a href="#">info@devstudio.com</a>
-                        </li>
-                    </ul>
-                    <ul class="nav__socials-nav socials-nav">
-                        <li class="socials-nav__item">
-                            <a href="#">Instagram</a>
-                        </li>
-                        <li class="socials-nav__item">
-                            <a href="#">Twitter</a>
-                        </li>
-                        <li class="socials-nav__item">
-                            <a href="#">Facebook</a>
-                        </li>
-                        <li class="socials-nav__item">
-                            <a href="#">LinkedIn</a>
-                        </li>
-                    </ul>
-                    <button type="button" class="nav__close-btn">
-                        <svg>
+                    <div class="nav__contacts contacts">
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a class="contacts__link contacts__link--number" href="#">+38 096 111 11 11</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link contacts__link--mail" href="#">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="contacts__socials socials-nav">
+                            <li class="socials-nav__item">
+                                <a class="socials-nav__link" href="#">Instagram</a>
+                            </li>
+                            <li class="socials-nav__item">
+                                <a class="socials-nav__link" href="#">Twitter</a>
+                            </li>
+                            <li class="socials-nav__item">
+                                <a class="socials-nav__link" href="#">Facebook</a>
+                            </li>
+                            <li class="socials-nav__item">
+                                <a class="socials-nav__link" href="#">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button type="button" class="nav__btn nav__btn--close">
+                        <svg class="nav__close-icon">
                             <use href="./images/svg-icon/symbol-defs.svg#icon-close"></use>
                         </svg>
                     </button>
