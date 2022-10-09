@@ -45,13 +45,16 @@
 
             <div class="container nav">
                 <a href="./index.html" class="nav__logo logo"><span class="nav__logo--black">Web</span>Studio</a>
-                <button type="button" class="nav__btn nav__btn--burger">
+                <button type="button"
+                        class="nav__btn nav__btn--burger menu-toggle js-open-menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
                     <svg class="nav__icon">
                         <use href="./images/svg-icon/symbol-defs.svg#icon-burger-menu"></use>
                     </svg>
                 </button>
-                <div class="nav__modal" data-menu="">
-                    <ul class="nav__list">
+                <div class="nav__modal menu-container js-menu-container" id="mobile-menu">
+                    <ul class="nav__list mobile-menu">
                         <li class="nav__item">
                             <a class="nav__link" href="#">Студія</a>
                         </li>
@@ -87,7 +90,7 @@
                         </ul>
                     </div>
                     
-                    <button type="button" class="nav__btn nav__btn--close">
+                    <button type="button" class="nav__btn nav__btn--close menu-toggle js-close-menu">
                         <svg class="nav__close-icon">
                             <use href="./images/svg-icon/symbol-defs.svg#icon-close"></use>
                         </svg>
@@ -95,22 +98,20 @@
                 </div>
             </div>
         </div> 
-
-
     </header>
  
-     <!-- <main> -->
+     <main>
 
         <!-- Герой -->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="button primary" data-modal-open>Замовити послугу</button>
             </div>
-        </section> -->
+        </section>
 
         <!-- Наші особливості -->
-        <!-- <section class="section features">
+        <section class="section features">
             <div class="container">
                 <h2 class="title hidden">Особливості</h2>
 
@@ -153,10 +154,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Чим ми займаємось -->
-        <!-- <section class="section we-do no-padding">
+        <section class="section we-do no-padding">
             <div class="container">
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="we-do__list">
@@ -174,11 +175,11 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Наша команда -->
-        <!-- <section class="section team">
-            <div class="container">
+        <section class="section team">
+            <div class="container team-container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
@@ -331,10 +332,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Постійні клієнти -->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="title">
                     Постійні клієнти
@@ -384,14 +385,14 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-    <!-- </main> -->
+    </main>
 
     <!-- Футер -->
-    <!-- <footer class="footer">
+ <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__address-container address-container">
+            <div class="footer__address-container address-container footer__item">
                 <a href="./index.html" class="footer__logo logo">Web<span class="footer__logo--white">Studio</span></a>
 
                 <address class="address">
@@ -404,7 +405,7 @@
                 </address>
             </div>
             
-            <div class="footer__socials-container">
+            <div class="footer__socials-container footer__item">
                 <b class="footer__subtitle">приєднуйтесь</b>
                 <ul class="socials-list">
                     <li class="socials-list__item">
@@ -539,8 +540,9 @@
             
         </div>
     </div> 
-
-    <script src="./modal.js"></script> -->
+    
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

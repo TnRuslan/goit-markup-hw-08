@@ -2,17 +2,51 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+    }
     background-color: #2F303A;
     &__container {
-        display: flex;
-        align-items: baseline;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px 165px;
+        }
+    }
+    &__item {
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+        width: calc((100% - 165px) / 2);
+        }
     }
     &__address-container {
-        margin-right: 70px;
+        margin-bottom: 60px;
+        @media screen and (min-width: 768px) {
+            // margin-right: 165px;
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+        } 
     }
     &__socials-container {
-        margin-right: 93px;
+        margin-bottom: 60px;
+        @media screen and (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
     }
+    &__subscription-container {
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            width: 450px;
+        }
+    }
+
     &__logo {
         display: block;
         margin-bottom: 20px;
@@ -32,23 +66,33 @@
         color: #FFFFFF;
     }
     &__subscription {
-        display: flex;
-        gap: 9px;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 9px;
+        }
     }
     &__input {
-        width: 358px;
-        
+        width: 100%;
+        margin-bottom: 20px;
         padding: 15px 16px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
+
         outline: none;
-    
         background-color: transparent;
         color: inherit;
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+            margin-bottom: 0;
+        }
     }
     &__btn {
         display: flex;
         align-items: center;
+        @media screen and (max-width: 1200px ) {
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 }
 

@@ -52,16 +52,23 @@ button {
 
 .container {
     max-width: 480px;
-    padding-top: 15px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    @media screen and (min-width: 768px) {
+        max-width: 1200px;
+    }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
 }
 
