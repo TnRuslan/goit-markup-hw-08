@@ -1,5 +1,4 @@
 .features__list {
-
     @media screen and (min-width: 768px) {
         display: flex;
         gap: 30px;
@@ -12,14 +11,12 @@
     @media screen and (max-width: 767px) {
         margin-bottom: 30px;    
     }
-
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
     }
     @media screen and (min-width: 1200px) {
         width: calc((100% - 3 * 30px) / 4);
-    }
-    
+    }  
 }
 
 .features__thumb {
