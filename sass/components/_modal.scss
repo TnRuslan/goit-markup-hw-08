@@ -178,9 +178,13 @@
     margin-bottom: 30px;
     &__label {
         align-items: center;
-    
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.16;
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+        
     }
     &__link {
         color: var(--accent-color);
