@@ -970,7 +970,11 @@ button {
     width: calc((100% - 90px) / 4);
   }
 }
-.team__image .team__subtitle {
+.team__image {
+  width: 100%;
+  height: auto;
+}
+.team__subtitle {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
